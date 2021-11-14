@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+}
+.compass {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  width: 90px;
+  height: 88px;
+  z-index: 2;
+}
+.compass img {
+  width: 100%;
+  height: 100%;
+}
+.map-switch {
+  position: absolute;
+  bottom: 2%;
+  right: 5%;
+  display: flex;
+  justify-content: space-between;
+  width: 6.5%;
+  padding: 0.2% 0.3%;
+  border: 1px dashed #000;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.map-switch .switch-btn {
+  position: relative;
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
+  border: 2px dashed #c57272;
+}
+.map-switch .switch-btn img {
+  width: 100%;
+  height: 100%;
+}
+.map-switch .switch-btn .selected {
+  position: absolute;
+  top: 3%;
+  left: 5%;
+  width: 45%;
+  height: 60%;
+  user-select: none;
+}
+.map-switch .switch-btn .selected img {
+  user-select: none;
+  width: 100%;
+  height: 100%;
+}
